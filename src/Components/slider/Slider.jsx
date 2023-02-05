@@ -25,6 +25,7 @@ const Slider = () => {
        if(autoScroll){
         auto();
        }
+       return()=> clearInterval(slideInterval)
     },[currentSlide])
   return (
     <div className='slider'>
